@@ -1,0 +1,100 @@
+:root {
+  --primary-100:#2563eb;
+  --primary-200:#598EF3;
+  --primary-300:#D3E6FE;
+  --accent-100:#d946ef;
+  --accent-200:#fae8ff;
+  --text-100:#fff;
+  --text-200:#cbd5e1;
+  --text-300:#94a3b8;
+  --bg-100:#1e293b;
+  --bg-200:#334155;
+  --bg-300: #475569;
+
+  /*Fuentes y Tamaños*/
+  --bigFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontSize: .813rem;
+  --smallerFontSize: .75rem;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem 3rem;
+  background: var(--bg-100);
+}
+.navBar .logoNav {
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+.items li {
+  list-style: none;
+}
+.items li a {
+  text-decoration: none;
+  color: var(--text-300);
+  font-size: var(--h3FontSize);
+}
+.items li a:hover {
+  color: var(--accent-100);
+  transition: 0.3s ease;
+}
+
+.cardWidget {
+  font-size: var(--h2FontSize);
+  color: var(--text-300);
+  cursor: pointer;
+}
+.cardWidget:hover {
+  color: var(--accent-100);
+  transform: translateY(-2px);
+  transition: 1s ease-in-out;
+}
+
+.pulsate-bck:hover {
+	-webkit-animation: pulsate-bck 1s ease-in-out 1 both;
+	        animation: pulsate-bck 1s ease-in-out 1 both;
+}
+
+
+@-webkit-keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}

@@ -1,0 +1,88 @@
+:root {
+    --primary-100:#2563eb;
+    --primary-200:#598EF3;
+    --primary-300:#D3E6FE;
+    --accent-100:#d946ef;
+    --accent-200:#fae8ff;
+    --text-100:#fff;
+    --text-200:#cbd5e1;
+    --text-300:#94a3b8;
+    --bg-100:#1e293b;
+    --bg-200:#334155;
+    --bg-300: #475569;
+  
+    /*Fuentes y Tamaños*/
+    --bigFontSize: 2.5rem;
+    --h1FontSize: 1.5rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: .938rem;
+    --smallFontSize: .813rem;
+    --smallerFontSize: .75rem;
+  }
+
+.containerDetail{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: var(--bg-100);
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    width: 90%;
+    align-items: center;
+    justify-items: center;
+}
+
+.detailInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.detailImg{
+    width: 50%;
+    height: auto;
+    border-radius: 1rem;
+    align-items: center;
+}
+
+.infoProduct{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.infoName{
+    font-size: var(--h1FontSize);
+    color: var(--text-100);
+}
+
+.infoDescription{
+    font-size: var(--h3FontSize);
+    color: var(--text-200);
+}
+
+.infoPrice{
+    font-size: var(--h2FontSize);
+    color: var(--accent-100);
+}
+
+.btnGoToCart{
+    width: 140px;
+    height: 2.5rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--bg-300);
+    font-size: var(--h3FontSize);
+    color: var(--text-100);
+    cursor: pointer;
+}
+
+.btnGoToCart:hover{
+    background-color: var(--accent-100);
+}

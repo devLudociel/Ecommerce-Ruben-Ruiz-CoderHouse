@@ -1,0 +1,86 @@
+:root {
+    --primary-100:#2563eb;
+    --primary-200:#598EF3;
+    --primary-300:#D3E6FE;
+    --accent-100:#d946ef;
+    --accent-200:#fae8ff;
+    --text-100:#fff;
+    --text-200:#cbd5e1;
+    --text-300:#94a3b8;
+    --bg-100:#1e293b;
+    --bg-200:#334155;
+    --bg-300: #475569;
+  
+    /*Fuentes y Tamaños*/
+    --bigFontSize: 2.5rem;
+    --h1FontSize: 1.5rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: .938rem;
+    --smallFontSize: .813rem;
+    --smallerFontSize: .75rem;
+  }
+
+.itemCart{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--bg-100);
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    width: 90%;
+}
+
+.imgCheckOut{
+    width: 20%;
+    height: auto;
+}
+
+.infoCheckOut{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.titleCheckOut{
+    font-size: var(--h2FontSize);
+    color: var(--text-100);
+}
+
+.priceCheckOut{
+    font-size: var(--h3FontSize);
+    color: var(--text-200);
+}
+
+.quantityCheckOut{
+    font-size: var(--h3FontSize);
+    color: var(--text-200);
+}
+
+.subTotalCheckOut{
+    font-size: var(--h2FontSize);
+    color: var(--text-100);
+}
+
+.btnRemoveCheckOut{
+    width: 40px;
+    height: 2.5rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--bg-300);
+    font-size: var(--h3FontSize);
+    color: var(--text-100);
+    cursor: pointer;
+}
+
+.btnRemoveCheckOut:hover{
+    background-color: var(--accent-100);
+    color: var(--text-100);
+    transition: 0.3s ease;
+}
+
